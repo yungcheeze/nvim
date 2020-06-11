@@ -1,7 +1,7 @@
 inoremap <special> jk <ESC>
 
 let mapleader="\<Space>"
-imap <M-Space> <C-o><leader>
+imap <C-c> <C-o><leader>
 
 nnoremap <special> <leader>bb :Buffers<CR>
 nnoremap <special> <leader>fs :write<CR>
