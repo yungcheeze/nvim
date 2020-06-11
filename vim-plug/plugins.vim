@@ -13,4 +13,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
 
     Plug 'tmhedberg/simpylfold'
+
+    Plug 'neovim/nvim-lsp'
 call plug#end()
