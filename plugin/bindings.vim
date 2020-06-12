@@ -28,7 +28,7 @@ command LspReload call LspReload()
 
 nnoremap <silent> <leader>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> <leader>ld <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <leader>l?     <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <leader>lH     <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> <leader>gD    <cmd>lua vim.lsp.buf.implementation()<CR>
 nnoremap <silent> <leader>lh <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> <leader>1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
