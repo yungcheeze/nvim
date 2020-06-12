@@ -17,15 +17,6 @@ nnoremap <special> <leader>ve :source %<CR>
 nnoremap <special> <leader><Space> :Commands<CR>
 nnoremap <special> <leader><Space> :Commands<CR>
 
-"LSP
-
-function LspReload()
-	lua vim.lsp.stop_client(vim.lsp.get_active_clients())
-	edit
-endfunction
-
-command LspReload call LspReload()
-
 nnoremap <silent> <leader>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> <leader>ld <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> <leader>lH     <cmd>lua vim.lsp.buf.hover()<CR>

@@ -27,6 +27,13 @@ set autochdir
 set nowrap
 
 "Lsp
+function LspReload()
+	lua vim.lsp.stop_client(vim.lsp.get_active_clients())
+	edit!
+endfunction
+
+command LspReload call LspReload()
+
 "Python
 lua require'nvim_lsp'.pyls_ms.setup{}
 autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
