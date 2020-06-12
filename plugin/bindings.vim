@@ -29,6 +29,8 @@ nnoremap <silent> <leader>g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> <leader>gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> <leader>Lr    <cmd>LspReload<CR>
 
+autocmd Filetype python nnoremap <localleader>vr <cmd>PoetvActivate<CR>
+
 " tab compeletion for deoplete
 "function! s:check_back_space() abort "{{{
 "  let col = col('.') - 1
