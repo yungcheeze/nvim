@@ -57,6 +57,9 @@ imap <C-c> <C-o><leader>
 imap <M-Space> <C-o><leader>
 
 nnoremap <special> <leader>bb :Buffers<CR>
+nnoremap <special> <leader>bn :bnext<CR>
+nnoremap <special> <leader>bp :bprevious<CR>
+nnoremap <special> <leader>bd :bdelete<CR>
 nnoremap <special> <leader>wd :q!<CR>
 nnoremap <special> <leader>wo :only!<CR>
 nnoremap <special> <leader>ws :split<CR>
