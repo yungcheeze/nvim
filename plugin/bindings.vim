@@ -35,4 +35,5 @@ nnoremap <silent> <leader>1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
 nnoremap <silent> <leader>gr    <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <leader>g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> <leader>gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> <leader>lr    <cmd>call LspReload()<CR>
 
