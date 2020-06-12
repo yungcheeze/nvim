@@ -51,15 +51,21 @@ call deoplete#custom#source('_', 'max_menu_width', 80)
 
 inoremap <special> jk <ESC>
 
+" Leaders
 let mapleader="\<Space>"
 let maplocalleader="\<Space>l"
 imap <C-c> <C-o><leader>
 imap <M-Space> <C-o><leader>
 
+"--------------------------------------------------------------------------------
+"Bindings
+" Buffers
 nnoremap <special> <leader>bb :Buffers<CR>
 nnoremap <special> <leader>bn :bnext<CR>
 nnoremap <special> <leader>bp :bprevious<CR>
 nnoremap <special> <leader>bd :bdelete<CR>
+
+"Windows
 nnoremap <special> <leader>wd :q!<CR>
 nnoremap <special> <leader>wo :only!<CR>
 nnoremap <special> <leader>ws :split<CR>
@@ -68,19 +74,30 @@ nnoremap <special> <leader>wh <C-w>h
 nnoremap <special> <leader>wj <C-w>j
 nnoremap <special> <leader>wk <C-w>k
 nnoremap <special> <leader>wl <C-w>l
+
+"Files
 nnoremap <special> <leader>fs :update<CR>
 nnoremap <special> <leader>fr :History<CR>
 nnoremap <special> <leader>ff :Files<CR>
 nnoremap <special> <leader>fd :call delete(expand('%')) <bar> bdelete!<CR>
+
+"Quitting
 nnoremap <special> <leader>qq :confirm quitall!<CR>
 nnoremap <special> <leader>qQ :quitall!<CR>
 nnoremap <special> <leader>pf :GitFiles<CR>
+
+"Toggles
 nnoremap <special> <leader>th :nohlsearch<CR>
+
+" Searching
 nnoremap <special> <leader>ss :BLines<CR>
+
+"Vim
 nnoremap <special> <leader>ve :source %<CR>
 nnoremap <special> <leader><Space> :Commands<CR>
 nnoremap <special> <leader><Space> :Commands<CR>
 
+"Lsp
 nnoremap <silent> <leader>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> <leader>Ld <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> <leader>LH     <cmd>lua vim.lsp.buf.hover()<CR>
