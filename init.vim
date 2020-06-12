@@ -17,6 +17,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neovim/nvim-lsp', { 'do': './scripts/docgen.sh' }
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'Shougo/deoplete-lsp'
+
+    Plug 'petobens/poet-v'
 call plug#end()
 
 " Vim Options
