@@ -93,3 +93,8 @@ autocmd Filetype python nnoremap <localleader>vr <cmd>PoetvActivate<CR>
 "      \ pumvisible() ? "\<C-n>" :
 "      \ <SID>check_back_space() ? "\<TAB>" :
 "      \ deoplete#manual_complete()
+
+
+"filetype indents
+set expandtab
+autocmd Filetype vim setlocal softtabstop=4 shiftwidth=4
