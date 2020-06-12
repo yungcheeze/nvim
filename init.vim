@@ -50,6 +50,14 @@ imap <C-c> <C-o><leader>
 imap <M-Space> <C-o><leader>
 
 nnoremap <special> <leader>bb :Buffers<CR>
+nnoremap <special> <leader>wd :q!<CR>
+nnoremap <special> <leader>wo :only!<CR>
+nnoremap <special> <leader>ws :split<CR>
+nnoremap <special> <leader>wv :vsplit<CR>
+nnoremap <special> <leader>wh <C-w>h
+nnoremap <special> <leader>wj <C-w>j
+nnoremap <special> <leader>wk <C-w>k
+nnoremap <special> <leader>wl <C-w>l
 nnoremap <special> <leader>fs :update<CR>
 nnoremap <special> <leader>fr :History<CR>
 nnoremap <special> <leader>ff :Files<CR>
