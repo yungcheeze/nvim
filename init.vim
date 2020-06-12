@@ -16,6 +16,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'Shougo/deoplete-lsp'
 
+    Plug 'lambdalisue/gina.vim'
+    Plug 'mhinz/vim-signify'
+
     Plug 'petobens/poet-v'
 call plug#end()
 
@@ -23,6 +26,10 @@ call plug#end()
 set number
 set autochdir
 set nowrap
+
+" Git
+"vim-signify
+set updatetime=100
 
 "Lsp
 function LspReload()
