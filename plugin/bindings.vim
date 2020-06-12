@@ -9,6 +9,7 @@ nnoremap <special> <leader>bb :Buffers<CR>
 nnoremap <special> <leader>fs :update<CR>
 nnoremap <special> <leader>fr :History<CR>
 nnoremap <special> <leader>ff :Files<CR>
+nnoremap <special> <leader>fd :call delete(expand('%')) | bdelete!
 nnoremap <special> <leader>qq :confirm quitall!<CR>
 nnoremap <special> <leader>qQ :quitall!<CR>
 nnoremap <special> <leader>pf :GitFiles<CR>
