@@ -61,7 +61,7 @@ imap <M-Space> <C-o><leader>
 nnoremap <special> <leader>bb :Buffers<CR>
 nnoremap <special> <leader>bn :bnext<CR>
 nnoremap <special> <leader>bp :bprevious<CR>
-nnoremap <special> <leader>bd :bdelete<CR>
+nnoremap <special> <leader>bd :Bclose<CR>
 
 "Windows
 nnoremap <special> <leader>wd :mksession! ~/session.vim<CR>:q!<CR>
