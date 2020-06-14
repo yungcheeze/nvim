@@ -9,6 +9,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yungcheeze/vimacs',
     	\ {'do': './install.sh'}
 
+    Plug 'tpope/vim-eunuch'
+
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 
