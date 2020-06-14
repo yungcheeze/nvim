@@ -36,14 +36,6 @@ colorscheme spacecamp
 "vim-signify
 set updatetime=100
 
-"Lsp
-function LspReload()
-	lua vim.lsp.stop_client(vim.lsp.get_active_clients())
-	edit!
-endfunction
-
-command LspReload call LspReload()
-
 "Python
 let g:poetv_auto_activate=1
 lua require'nvim_lsp'.pyls_ms.setup{}
@@ -53,17 +45,6 @@ autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
 "Autocompletion
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
-
-" Utils
-command! -nargs=+ -complete=command Confirm execute <SID>confirm(<q-args>) | match none
-function! s:confirm(cmd)
-  let abort = 'match none | throw "Confirm: Abort"'
-  let options = [abort, a:cmd, '', abort]
-  match none
-  execute 'match IncSearch /\c\%' . line('.') . 'l' . @/ . '/'
-  redraw
-  return get(options, confirm('Execute?', "&yes\n&no\n&abort", 2), abort)
-endfunction
 
 inoremap <special> jk <ESC>
 inoremap <special> kj <ESC>
@@ -132,17 +113,7 @@ nnoremap <silent> <leader>Lr    <cmd>LspReload<CR>
 
 autocmd Filetype python nnoremap <localleader>vr <cmd>PoetvActivate<CR>
 
-" tab compeletion for deoplete
-"function! s:check_back_space() abort "{{{
-"  let col = col('.') - 1
-"  return !col || getline('.')[col - 1]  =~ '\s'
-"endfunction"}}}
-"inoremap <silent><expr> <TAB>
-"      \ pumvisible() ? "\<C-n>" :
-"      \ <SID>check_back_space() ? "\<TAB>" :
-"      \ deoplete#manual_complete()
-
-
 "filetype indents
 set expandtab
 autocmd Filetype vim setlocal softtabstop=4 shiftwidth=4
+autocmd Filetype sh setlocal softtabstop=4 shiftwidth=4
