@@ -78,7 +78,8 @@ nnoremap <special> <leader>wl <C-w>l
 "Files
 nnoremap <special> <leader>fs :update<CR>
 nnoremap <special> <leader>fr :History<CR>
-nnoremap <special> <leader>ff :Files<CR>
+nnoremap <special> <leader>ff :FilesGitignore<CR>
+nnoremap <special> <leader>fF :Files<CR>
 nnoremap <special> <leader>fd :Confirm Delete<CR>
 
 "Projects
