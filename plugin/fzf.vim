@@ -1,5 +1,5 @@
-function! FzfChain(func, line)
-    call call(a:func, [a:line])
+function! FzfChain(func, ...)
+    call call(a:func, a:000)
     if has('nvim')
         call feedkeys('i', 'n')
     endif
