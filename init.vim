@@ -54,6 +54,17 @@ autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
 
+" Utils
+command! -nargs=+ -complete=command Confirm execute <SID>confirm(<q-args>) | match none
+function! s:confirm(cmd)
+  let abort = 'match none | throw "Confirm: Abort"'
+  let options = [abort, a:cmd, '', abort]
+  match none
+  execute 'match IncSearch /\c\%' . line('.') . 'l' . @/ . '/'
+  redraw
+  return get(options, confirm('Execute?', "&yes\n&no\n&abort", 2), abort)
+endfunction
+
 inoremap <special> jk <ESC>
 inoremap <special> kj <ESC>
 
