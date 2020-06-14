@@ -83,8 +83,9 @@ nnoremap <special> <leader>bp :bprevious<CR>
 nnoremap <special> <leader>bd :bdelete<CR>
 
 "Windows
-nnoremap <special> <leader>wd :q!<CR>
-nnoremap <special> <leader>wo :only!<CR>
+nnoremap <special> <leader>wd :mksession! ~/session.vim<CR>:q!<CR>
+nnoremap <special> <leader>wo :mksession! ~/session.vim<CR>:wincmd o<CR>
+nnoremap <special> <leader>wu :source ~/session.vim<CR>
 nnoremap <special> <leader>ws :split<CR>
 nnoremap <special> <leader>wv :vsplit<CR>
 nnoremap <special> <leader>wh <C-w>h
