@@ -99,10 +99,13 @@ nnoremap <special> <leader>fr :History<CR>
 nnoremap <special> <leader>ff :Files<CR>
 nnoremap <special> <leader>fd :Confirm Delete<CR>
 
+"Projects
+nnoremap <special> <leader>pp :Projects<CR>
+nnoremap <special> <leader>pf :GitFiles<CR>
+
 "Quitting
 nnoremap <special> <leader>qq :confirm quitall!<CR>
 nnoremap <special> <leader>qQ :quitall!<CR>
-nnoremap <special> <leader>pf :GitFiles<CR>
 
 "Toggles
 nnoremap <special> <leader>th :nohlsearch<CR>
