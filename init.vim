@@ -20,12 +20,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-signify'
 
     Plug 'petobens/poet-v'
+
+    Plug 'jaredgorski/spacecamp'
 call plug#end()
 
 " Vim Options
 set number
 set autochdir
 set nowrap
+colorscheme spacecamp
 
 " Git
 "vim-signify
