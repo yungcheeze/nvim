@@ -96,7 +96,7 @@ nnoremap <special> <leader>wl <C-w>l
 nnoremap <special> <leader>fs :update<CR>
 nnoremap <special> <leader>fr :History<CR>
 nnoremap <special> <leader>ff :Files<CR>
-nnoremap <special> <leader>fd :call delete(expand('%')) <bar> bdelete!<CR>
+nnoremap <special> <leader>fd :Confirm Delete<CR>
 
 "Quitting
 nnoremap <special> <leader>qq :confirm quitall!<CR>
