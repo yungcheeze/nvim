@@ -1,11 +1,3 @@
-"Lsp
-function LspReload()
-	lua vim.lsp.stop_client(vim.lsp.get_active_clients())
-	edit!
-endfunction
-
-command LspReload call LspReload()
-
 " Utils
 command! -nargs=+ -complete=command Confirm execute <SID>confirm(<q-args>) | match none
 function! s:confirm(cmd)

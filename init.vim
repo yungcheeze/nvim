@@ -38,11 +38,6 @@ colorscheme spacecamp
 "vim-signify
 set updatetime=100
 
-"Python
-lua require'nvim_lsp'.pyls_ms.setup{}
-autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
-
-
 "Autocompletion
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
