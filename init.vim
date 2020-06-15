@@ -84,7 +84,7 @@ nnoremap <special> <leader>fd :Confirm Delete<CR>
 
 "Projects
 nnoremap <special> <leader>pp :Projects<CR>
-nnoremap <special> <leader>pf :GitFiles<CR>
+nnoremap <special> <leader>pf :ProjectFiles<CR>
 
 "Quitting
 nnoremap <special> <leader>qq :confirm quitall!<CR>
