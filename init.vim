@@ -39,7 +39,6 @@ colorscheme spacecamp
 set updatetime=100
 
 "Python
-let g:poetv_auto_activate=1
 lua require'nvim_lsp'.pyls_ms.setup{}
 autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
