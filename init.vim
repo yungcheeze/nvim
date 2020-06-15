@@ -21,6 +21,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'lambdalisue/gina.vim'
     Plug 'mhinz/vim-signify'
 
+    Plug 'direnv/direnv.vim'
+
     Plug 'petobens/poet-v'
 
     Plug 'jaredgorski/spacecamp'
