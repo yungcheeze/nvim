@@ -33,7 +33,7 @@ call plug#begin('~/.config/nvim/plugged')
 call plug#end()
 
 " Vim Options
-set number
+set relativenumber
 set autochdir
 set nowrap
 colorscheme spacecamp
