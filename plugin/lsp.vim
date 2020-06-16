@@ -5,6 +5,7 @@ function! LspReload()
 endfunction
 
 command LspReload call LspReload()
+command LspDisable lua vim.lsp.stop_client(vim.lsp.get_active_clients())
 
 "Python
 lua require'nvim_lsp'.pyls_ms.setup{}
