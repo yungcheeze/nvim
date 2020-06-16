@@ -61,8 +61,3 @@ let maplocalleader="\<Space>l"
 nmap <M-Space> <leader>
 imap <C-c> <C-o><leader>
 imap <M-Space> <C-o><leader>
-
-"filetype indents
-set expandtab
-autocmd Filetype vim setlocal softtabstop=4 shiftwidth=4
-autocmd Filetype sh setlocal softtabstop=4 shiftwidth=4
