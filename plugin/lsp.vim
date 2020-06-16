@@ -18,3 +18,7 @@ autocmd Filetype sh setlocal omnifunc=v:lua.vim.lsp.omnifunc
 "Vim
 lua require'nvim_lsp'.vimls.setup{}
 autocmd Filetype vim setlocal omnifunc=v:lua.vim.lsp.omnifunc
+
+"Ccls
+lua require'nvim_lsp'.ccls.setup{}
+autocmd Filetype c,cpp,objc,objcpp setlocal omnifunc=v:lua.vim.lsp.omnifunc
