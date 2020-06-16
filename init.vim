@@ -20,6 +20,10 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'lambdalisue/gina.vim'
     Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'rbong/vim-flog'
+    Plug 'tpope/vim-dispatch'
+    Plug 'jreybert/vimagit'
 
     Plug 'direnv/direnv.vim'
 
