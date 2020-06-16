@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'petobens/poet-v'
 
     Plug 'jaredgorski/spacecamp'
+
+    Plug 'jceb/vim-orgmode'
 call plug#end()
 
 " Vim Options
