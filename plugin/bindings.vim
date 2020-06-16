@@ -1,3 +1,14 @@
+"Escaping insert mode
+inoremap <special> jk <ESC>
+inoremap <special> kj <ESC>
+
+" Leaders
+let mapleader="\<Space>"
+let maplocalleader="\<Space>l"
+nmap <M-Space> <leader>
+imap <C-c> <C-o><leader>
+imap <M-Space> <C-o><leader>
+
 " Buffers
 nnoremap <special> <leader>bb :Buffers<CR>
 nnoremap <special> <leader>bn :bnext<CR>
