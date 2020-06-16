@@ -28,6 +28,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'jaredgorski/spacecamp'
 
     Plug 'jceb/vim-orgmode'
+
+    Plug 'vim-test/vim-test'
 call plug#end()
 
 " Vim Options
