@@ -90,6 +90,12 @@ nnoremap <special> <leader>fd :Confirm Delete<CR>
 nnoremap <special> <leader>pp :Projects<CR>
 nnoremap <special> <leader>pf :ProjectFiles<CR>
 
+"Git
+nnoremap <leader>gS :Gina add %<CR>
+nnoremap <leader>gs :Magit<CR>
+nnoremap <leader>gc :Gina commit<CR>
+nnoremap <leader>gl :Flog<CR>
+
 "Quitting
 nnoremap <special> <leader>qq :confirm quitall!<CR>
 nnoremap <special> <leader>qQ :quitall!<CR>
