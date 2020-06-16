@@ -69,6 +69,7 @@ nnoremap <special> <leader>bp :bprevious<CR>
 nnoremap <special> <leader>bd :Bclose<CR>
 
 "Windows
+nnoremap <special> <leader>wq :q<CR>
 nnoremap <special> <leader>wd :mksession! ~/session.vim<CR>:q!<CR>
 nnoremap <special> <leader>wo :mksession! ~/session.vim<CR>:wincmd o<CR>
 nnoremap <special> <leader>wu :source ~/session.vim<CR>
