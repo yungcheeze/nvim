@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'godlygeek/tabular'
+    Plug 'junegunn/vim-easy-align'
 
     Plug 'neovim/nvim-lsp', { 'do': './scripts/docgen.sh' }
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
