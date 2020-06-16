@@ -110,21 +110,21 @@ nnoremap <special> <leader>th :nohlsearch<CR>
 nnoremap <special> <leader>ss :BLines<CR>
 
 "Vim
-nnoremap <special> <leader>ve :source %<CR>
+nnoremap <special> <leader>ve      :source %<CR>
 nnoremap <special> <leader><Space> :Commands<CR>
 nnoremap <special> <leader><Space> :Commands<CR>
 
 "Lsp
-nnoremap <silent> <leader>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
-nnoremap <silent> <leader>Ld <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <leader>LH     <cmd>lua vim.lsp.buf.hover()<CR>
-nnoremap <silent> <leader>gD    <cmd>lua vim.lsp.buf.implementation()<CR>
-nnoremap <silent> <leader>Lh <cmd>lua vim.lsp.buf.signature_help()<CR>
-nnoremap <silent> <leader>1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
-nnoremap <silent> <leader>gr    <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <silent> <leader>g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
-nnoremap <silent> <leader>gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
-nnoremap <silent> <leader>Lr    <cmd>LspReload<CR>
+nnoremap <silent> <leader>gd  <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> <leader>Ld  <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <leader>LH  <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <leader>gD  <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <leader>Lh  <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> <leader>1gD <cmd>lua vim.lsp.buf.type_definition()<CR>
+nnoremap <silent> <leader>gr  <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <leader>g0  <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> <leader>gW  <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> <leader>Lr  <cmd>LspReload<CR>
 
 autocmd Filetype python nnoremap <localleader>vr <cmd>PoetvActivate<CR>
 
