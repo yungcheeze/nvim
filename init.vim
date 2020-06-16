@@ -77,6 +77,7 @@ nnoremap <special> <leader>wo :mksession! ~/session.vim<CR>:wincmd o<CR>
 nnoremap <special> <leader>wu :source ~/session.vim<CR>
 nnoremap <special> <leader>ws :split<CR>
 nnoremap <special> <leader>wv :vsplit<CR>
+nnoremap <special> <leader>w/ :vsplit<CR>
 nnoremap <special> <leader>wh <C-w>h
 nnoremap <special> <leader>wj <C-w>j
 nnoremap <special> <leader>wk <C-w>k
