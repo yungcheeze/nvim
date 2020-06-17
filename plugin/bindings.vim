@@ -46,6 +46,7 @@ nnoremap <leader>pp :Projects<CR>
 nnoremap <leader>pf :ProjectFiles<CR>
 
 "Quitting
+nnoremap <leader>qa :cquit!<CR>
 nnoremap <leader>qq :confirm quitall!<CR>
 nnoremap <leader>qQ :quitall!<CR>
 
