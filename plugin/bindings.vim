@@ -8,6 +8,7 @@ let maplocalleader="\<Space>l"
 nmap <M-Space> <leader>
 imap <C-c> <C-o><leader>
 imap <M-Space> <C-o><leader>
+vmap <M-Space> <leader>
 
 " Buffers
 nnoremap <leader>bb :Buffers<CR>
