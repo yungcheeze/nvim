@@ -50,6 +50,10 @@ nnoremap <leader>qa :cquit!<CR>
 nnoremap <leader>qq :confirm quitall!<CR>
 nnoremap <leader>qQ :quitall!<CR>
 
+"Registers
+nmap <leader>rp "*
+nmap <leader>rs "+
+
 " Searching
 nnoremap <leader>ss :BLines<CR>
 
