@@ -52,12 +52,3 @@ set updatetime=100
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
 
-inoremap <special> jk <ESC>
-inoremap <special> kj <ESC>
-
-" Leaders
-let mapleader="\<Space>"
-let maplocalleader="\<Space>l"
-nmap <M-Space> <leader>
-imap <C-c> <C-o><leader>
-imap <M-Space> <C-o><leader>
