@@ -15,6 +15,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'godlygeek/tabular'
     Plug 'junegunn/vim-easy-align'
+    Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-unimpaired'
 
     Plug 'neovim/nvim-lsp', { 'do': './scripts/docgen.sh' }
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
