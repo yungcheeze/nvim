@@ -18,6 +18,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-unimpaired'
+    Plug 'jiangmiao/auto-pairs'
 
     Plug 'neovim/nvim-lsp', { 'do': './scripts/docgen.sh' }
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
